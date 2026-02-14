@@ -20,13 +20,7 @@ test.describe('Employee Lifecycle E2E', () => {
     //Verify text in Dashboard page
     await dashboardPage.checkDashboardText()
 
-    // 2. Navigate to PIM
-
-    // 3. Add Employee (First Name, Last Name, ID)
-
-    // 4. Save and Search for the new employee
-
-    // 5. Assert the employee appears in the list
+  
   });
 
 });
