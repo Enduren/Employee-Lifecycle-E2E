@@ -7,9 +7,7 @@ test.describe('Employee Lifecycle E2E', () => {
   test('should login, add a new employee, and verify record', async ({ page }) => {
     const loginPage= new LoginPage(page)
     const dashboardPage = new DashboardPage(page)
-    
-    // const firstName = 'John';
-    // const lastName = `Doe_${Date.now()}`;
+
 
     // 1. Login
     await loginPage.goto();
@@ -19,6 +17,7 @@ test.describe('Employee Lifecycle E2E', () => {
 
     //Verify text in Dashboard page
     await dashboardPage.checkDashboardText()
+    
 
   
   });

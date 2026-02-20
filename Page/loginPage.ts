@@ -18,6 +18,7 @@ export class LoginPage {
   }
 
   async login(user: string, pass: string) {
+    await expect(this.loginButton).toHaveScreenshot();
     await this.usernameInput.fill(user);
     await this.passwordInput.fill(pass);
     await this.loginButton.click();
