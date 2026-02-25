@@ -17,6 +17,8 @@ test.describe('Employee Lifecycle E2E', () => {
 
     //Verify text in Dashboard page
     await dashboardPage.checkDashboardText()
+
+    await expect(page).toHaveScreenshot()
     
 
   
